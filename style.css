@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  min-width: fit-content;
+  position: relative;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.7em;
+  color: #808291;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+nav {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.nav-content .first-content {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding: 1rem;
+}
+
+.nav-content .first-content ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  order: 1;
+}
+
+.nav-content .first-content li {
+  list-style: none;
+  display: block;
+  padding: 10px;
+}
+
+.nav-content .first-content li a {
+  color: black;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  padding: 10px 10px;
+  transition: 0.4s;
+}
+
+.nav-content .first-content li:hover a {
+  text-decoration: none;
+  background-color: #eeeeee;
+  color: #fd5c4c;
+}
+
+.nav-content .second-content {
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+
+.nav-content .second-content div:first-child {
+  color: #fff;
+  margin-right: 20px;
+}
+.nav-content .second-content a {
+  text-transform: uppercase;
+  color: #fd5c4c;
+  padding: 10px 20px;
+  border: 1px solid #fd5c4c;
+  border-radius: 50em;
+  transition: 0.8s;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.nav-content .second-content a:hover {
+  border-color: transparent;
+  background-color: #fd5c4c;
+  color: #fff;
+  transform: translateY(-5px);
+  box-shadow: 0px 1px 1px rgb(0 0 0 / 5%), 0px 2px 2px rgb(0 0 0 / 5%),
+    0px 4px 4px rgb(0 0 0 / 5%), 0px 8px 8px rgb(0 0 0 / 5%),
+    0px 16px 16px rgb(0 0 0 / 5%);
+}
+
+@media screen and (max-width: 992px) {
+  nav {
+    display: none;
+  }
+}
+
+
+
